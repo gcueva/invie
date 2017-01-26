@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Invie | Precios</title>
+<link href="css/invie.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Allerta|Droid+Sans|Gloria+Hallelujah|Kaushan+Script|Lobster|Montserrat|Pacifico" rel="stylesheet">
+<meta name="viewport" content="width-device-width, initial-scale=1"/>
+
+</head>
+
+<body>
+  <div class="fondo1">
+   <div class="contenido">
+    <header id="cabecera">
+        <figure><!--logotipo--> 
+              <img srcset="imagenes/invie.png 1x, imagenes/invie2x.png 2x" width="186px" height="60px" alt="invie_logotipo">      
+		</figure>
+		<span class="icon-menu burguer-button" id="burguer-button"></span>
+		<nav class="menu" id="menu"> <!--menu-->
+		    <ul>
+				<li><a href="index.html">Home</a></li> 
+				<li><a href="index.html#guitarras">Guitarras</a></li>
+				<li><a href="precio.html">Precios</a></li>
+			</ul> 
+		</nav> 
+	</header>
+	</div>
+	</div>
+	<section class="contenido">
+      <div class="tabla">
+	    <table>
+	        <thead>
+	            <tr>
+					<th>Modelo</th>
+					<th width="60px">Precio</th>
+					<th width="250px">Descripción</th>
+					<th>Modelo</th>
+					<th width="60px">Precio</th>
+					<th width="250px">Descripción</th>
+				</tr>
+			</thead>
+			<tbody>
+			    <tr>
+					<td>Invie Stratocaster</td>
+					<td width="60px">$ 1 500</td>
+					<td>a</td>
+					<td>Invie Stratocaster</td>
+					<td width="60px">$ 1 500</td>
+					<td>Profundamente sensible al ataque de la púa, el timbre de la Strat es considerado uno de los más característicos de la historia de la guitarra moderna</td>
+				</tr>
+				<tr>
+					<td>Invie Telecaster</td>
+					<td>$ 1 800</td>
+					<td>Se caracteriza por la simplicidad en su diseño y por el sonido que se obtiene de sus dos pastillas de bobinado simple o single coil.</td>
+					<td>Invie Stratocaster</td>
+					<td>$ 1 500</td>
+					<td>Profundamente sensible al ataque de la púa, el timbre de la Strat es considerado uno de los más característicos de la historia de la guitarra moderna</td>
+				</tr>
+				<tr>
+					<td>Invie Jaguar</td>
+					<td>$ 2 000</td>
+					<td>Una de sus principales características es el esquema de doble circuito.<br/> 
+					 Los controles de un circuito se encuentran por encima de las cuerdas y los del otro por debajo de las cuerdas.</td>
+					 <td>Invie Stratocaster</td>
+					<td>$ 1 500</td>
+					<td>Profundamente sensible al ataque de la púa, el timbre de la Strat es considerado uno de los más característicos de la historia de la guitarra moderna</td>
+				</tr>
+			</tbody>
+		</table>
+	  </div>
+	</section>
+	<footer id="footer">
+      <div class="footer contenido">
+	    <div class="contacto">
+	        <img src="imagenes/invie-white.png" alt="Logotipo blanco"/>
+			<a href="tel: 01-5503471"><strong>Teléfono</strong><span>01-5503471</span></a>
+			<a href="mailto:gm.cueva95@gmail.com"><strong>E-mail</strong><span>gm.cueva95@gmail.com</span></a>
+		</div>
+		<form class="formulario">
+	       <div class="form_1">
+		      <div class="datos">
+		        <div class="nombre">
+			        <label for="nombre">Nombre</label>
+		            <input type="text" placeholder="Nombre Completo" id="nombre" name="nombre"/>
+			    </div> 
+		        <div class="email">
+			        <label for="email">E-mail</label>
+		            <input type="email" required="asdasd@asdas.com" placeholder="Correo Electrónico" id="email" name="email"/>
+			    </div>
+			  </div>
+		      <div class="sexo">
+		        <label for="Mujer">
+		            <input type="radio" id="Mujer" name="Sexo" value="Mujer" />Mujer
+			    </label>
+		        <label for="Hombre">
+		            <input type="radio" id="Hombre" name="Sexo" value="Hombre"/>Hombre
+			    </label>
+			  </div>
+			  <div class="intereses">
+		        <label for="cotizacion">
+		            <input type="checkbox" id="cotizacion" name="intereses" value="cotizacion">Cotización
+			    </label>
+		        <label for="reclamos">
+		            <input type="checkbox" id="reclamos" name="intereses" value="reclamos">Reclamos
+			    </label>
+		        <label for="comentarios">
+		            <input type="checkbox" id="comentarios" name="intereses"/>Comentarios
+			    </label>
+		        <label for="otros">
+		            <input type="checkbox" id="otros" name="intereses" value="otros">Otros
+			    </label>
+			  </div>
+		    </div>
+			<div class="form_2">
+				<label for="comentario">Comentario</label>
+				<textarea name="comentario" id="comentario" cols="20" rows="7"></textarea>
+				<input type="submit" value="Enviar" class="button"/>
+			</div>
+		  </form>
+		</div>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js">
+	</script>
+	<script>
+		var burguerButton = document.getElementById("burguer-button");
+		var menu = document.getElementById("menu");
+		burguerButton.addEventListener("mouseup",menuActivar);
+		
+		function menuActivar()
+		{
+			menu.classList.toggle('active');
+			burguerButton.classList.toggle('icon-close');
+		}
+		//Lazy loading
+		var bLazy = new Blazy({
+    		selector: 'img'
+			// options
+		});
+	</script>
+</body>
+</html>
